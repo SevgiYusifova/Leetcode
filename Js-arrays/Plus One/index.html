@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    function plusOne() {
+        let digits = [9]
+        let i = digits.length - 1
+        while (true) {
+            if (digits[i] == 9) {
+                digits[i] = 0
+                if (digits[--i] == undefined) {
+                    digits.unshift(1)
+                    break;
+                }
+            } else {
+                digits[i]++
+                    break
+            }
+        }
+        console.log(digits)
+    }
+</script>
+
+
+<!-- s
+    function plusOne() {
+        let digits = [5, 3, 0]
+        lastelement = digits.pop()
+        if (lastelement < 9) {
+            lastelement = lastelement + 1
+        } else {
+            lastelement = 0
+        }
+        digits.push(lastelement)
+    }
